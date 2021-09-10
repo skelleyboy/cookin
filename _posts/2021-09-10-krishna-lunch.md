@@ -9,6 +9,7 @@ title: Krishna Lunch
 * Big bowl
 * Oven 400 degrees
 * Baking dish
+* spatula
 
 ## Ingredients
 
