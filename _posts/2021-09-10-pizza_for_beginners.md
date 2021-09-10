@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Pizza for Beginners
+title: 'Pizza '
 
 ---
 ## Tools
