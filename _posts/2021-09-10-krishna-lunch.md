@@ -3,6 +3,31 @@ layout: post
 title: Krishna Lunch
 
 ---
+# Krishna Dressing
+
+## Tools
+
+* magic bullet or blender
+* mason jar 
+
+## Ingredients
+
+1. cup almonds
+2. 1⁄2 cup extra virgin olive oil or 1/2 cup sunflower oil
+3. 1 cup water
+4. 1⁄4 cup nutritional yeast
+5. 2 tablespoons Braggs liquid aminos (or soy sauce)
+6. 1 tablespoon hing ("asafetida")
+
+## Directions
+
+1. Blend all ingredients.
+2. Refrigerate and serve on salad or whatever you want (its good on the next dish.)
+
+***
+
+# Kofta Balls for Pasta
+
 ## Tools
 
 * Grater
@@ -30,7 +55,7 @@ title: Krishna Lunch
 
  1. Preheat your oven to 400'F.
  2. Coat the bottom of a 9x13 inch oven proof dish or pan with the 2 tablespoons of olive oil so all of it is well covered. If you want to use more then do, these balls will stick to the bottom.
- 3. Grate the cauliflower and cabbage. 
+ 3. Grate the cauliflower and cabbage.
  4. Put all the other ingredients except the olive oil in a large bowl and add the grated cauliflower and cabbage. Mix until well combined.
  5. Let the mixture sit for about 20-30 minutes so the moisture from the veggies is absorbed by the flour, this will ensure that the mixture will stick together and you can roll it into balls.
  6. Roll into 1 inch balls. I found squeezing them back and forth in my hands worked well.
