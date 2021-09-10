@@ -5,7 +5,7 @@ title: Spanish Chicken
 ---
 ### Ingredients
 
-* 10 2 lbs skinless boneless chicken thighs
+* boneless chicken thighs and or drum sticks 
 * 2 onion, diced
 * can cannellini beans
 * 1 bullion
