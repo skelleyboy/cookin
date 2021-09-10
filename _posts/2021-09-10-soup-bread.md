@@ -3,5 +3,10 @@ layout: post
 title: Soup & Bread
 
 ---
-* 1 onion cut up
-* 1 carrot cut up
+* 1 onion 
+* 1 carrot 
+* 1 tomato
+* 1 celery  stalk
+* 1 garlic bulb
+* frozen peas
+* 
