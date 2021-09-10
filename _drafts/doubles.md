@@ -1,0 +1,13 @@
+---
+layout: post
+title: Doubles
+
+---
+1. 3 cups flour
+2. 1 teaspoon cumin
+3. ½-1 teaspoon turmeric
+4. 2 teaspoons active or dry yeast
+5. 1/2 teaspoons salt
+6. ½ teaspoon white pepper
+7. 1 ¼ cup warm water or more adjust water to form soft dough
+8. 1 Tablespoon sugar
