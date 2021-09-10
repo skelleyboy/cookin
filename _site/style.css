@@ -84,7 +84,6 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #222;
   font-weight: bold;
   line-height: 1.7;
   margin: 1em 0 15px;
@@ -781,10 +780,3 @@ code {
 /*# sourceMappingURL=style.css.map */
 
 
-@media (prefers-color-scheme: dark) {
-  a {color:#ff0000}
-  body {
-  color: #eee;
-  background: #121212;
-  }
-}
