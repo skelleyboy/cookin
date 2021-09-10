@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Thai Grilled Chicken
+title: Thai Chicken
 
 ---
  1. 1 large lemongrass stalk , white part only very finely chopped (about 2 tbsp) 
