@@ -1,3 +1,11 @@
+@media (prefers-color-scheme: dark) {
+  a {color:#ff0000}
+body {
+color: #eee;
+background: #121212;
+}
+}
+
 /***************/
 /* MEYER RESET */
 /***************/
