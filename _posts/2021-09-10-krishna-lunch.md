@@ -19,6 +19,13 @@ title: Krishna Lunch
 5. 2 tablespoons Braggs liquid aminos (or soy sauce)
 6. 1 tablespoon hing ("asafetida")
 
+## Directions
+
+1. Blend all ingredients.
+2. Refrigerate and serve on salad or whatever you want (its good on the next dish.)
+
+***
+
 # Kofta Balls for Pasta
 
 ## Tools
