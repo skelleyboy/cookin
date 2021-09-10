@@ -8,7 +8,7 @@ title: Spanish Chicken
 * 10 2 lbs skinless boneless chicken thighs
 * 2 onion, diced
 * can cannellini beans
-* 1 bullion  
+* 1 bullion
 * 1 garlic bulb minced
 * 1 bell pepper, chopped or sliced
 * 4 plum tomatoes
@@ -17,6 +17,7 @@ title: Spanish Chicken
 * Can tomato sauce
 * oregano
 * cumin
+* paprika
 * salt to taste
 * 2 bay leaf
 * black pepper
