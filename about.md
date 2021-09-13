@@ -6,6 +6,8 @@ permalink: "/about/"
 ---
 I currently live in Bloomington, IN with my wife [Stephanie Mack](http://stephaniemackphotography.com/) and our two rescue pups Bömber & Grimley.
 
+a
+
 <br><br>
 
 ## Other things I am passionate about
