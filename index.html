@@ -1,14 +1,325 @@
----
-layout: default
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Happy Pappy?</title>
+         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <STYLE>
+            body {background-color: #333; color: #fff; padding: 10px; margin: 10px;}
+            a {color:#fff; text-decoration: none;}
+            a:visited {background: red;}
+            *{font-family: 'Nunito', sans-serif;}
+            ul {list-style: none; margin:auto; padding: 0px; font-size: 5vw;list-style-position: inside;}
+            ul li::before {
+              content: "\2022";
+              font-weight: bold;
+              display: inline-block; 
+              width: 1em;
+              margin-left: -1em;
+            }
+            .pageContainer {margin:auto; padding: 10px;}
+            .tag {display: inline-block; color:white; padding: 0px; margin: 0px 0px 10px 0px; font-size: 18px; letter-spacing: 2px font-weight: bold; }
+            .card i {font-size: 24px; margin-right: 5px;}
+            .card {padding: 20px; background-color: rgba(255,255,255,.1);margin-bottom:10px; border-top:1px solid rgba(255,255,255,.1); border-radius: 9px;  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;}
+            .card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+           
+            .tasks li {border-bottom:1px solid #333;padding: 10px 30px;  margin: 0px 0px 10px 0px;}
+            
+            ul li:focus {background-color:crimson;}
+            .do li:before {  color:#00ff00;}
+            
+            .dont li:before {color:red;}
+            .dont {margin-top: 40px;}
+            .topLists {padding: 0px 0px 0px 0px; list-style-position: inside;}
+             .topLists input:focus, .topLists textarea:focus {
+border-bottom: 1px solid white !important;
+box-shadow: 0 0 0px !important;
+-moz-box-shadow: 0 0   !important;
+-webkit-box-shadow: 0 0  !important;
+}
 
----
+input:focus, textarea:focus, select:focus {
+outline-offset: 0px !important;
+outline: none !important;
+}
+            .topLists input {-webkit-appearance: none; outline: none; background: transparent;border:0px;  border-bottom:1px solid #666;  width: calc(100% - 40px); font-size: 20px; color:white; height: 40px; margin: 0px 0px 0px 0px;}
+            .listContainer {padding: 0px 0px 0px 0px;}
+            .custom-counter {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
 
-<div class="posts">
-  {% for post in site.posts %}
-    <article class="post">
+.custom-counter li {
+  counter-increment: step-counter;
+  margin-bottom: 10px;
+}
 
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+.custom-counter li::before {
+  content: counter(step-counter);
+  margin-right: 5px;
+  font-size: 80%;
+  border:1px solid white;
+  color: white;
+  font-weight: bold;
+  padding: 3px 8px;
+  border-radius: 50%;
+}
+            
+            /* tiny reset */
+html, body {
+	margin: 0;
+	padding: 0;
+	border: 0;
 
-    </article>
-  {% endfor %}
+}
+/* body */
+body{
+  font-family: sans-serif;
+}
+/* title */
+h1{
+font-size: 7vw; padding: 0px 0px; margin: 10px 0px; 
+}
+            
+h2 {font-weight: normal;font-size: 5vw; padding: 0px;}
+            
+/* tasks */
+.tasks{
+max-width: 900px;
+  margin: 30px auto;
+}
+input[type=checkbox] {
+  display: none;
+}
+label{
+  display: block;
+  border-bottom: 1px solid #666;
+  color: #fff;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.7s ease;
+  position: relative;
+  padding: 0px 60px 0px  10px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+label h2 span{
+  display: block;
+  text-transform: capitalize;
+  font-weight: normal;
+  color: #fff;
+}
+label:before{
+  content:"";
+  width: 20px;
+  height: 20px;
+  background: firebrick;
+  display: block;
+  position: absolute;
+  border-radius: 100%;
+  right: 20px;
+  top: 0px;
+    bottom:0px;
+  transition: border 0.7s ease
+}
+#label-1:checked ~ label[for=label-1],
+#label-2:checked ~ label[for=label-2],
+#label-3:checked ~ label[for=label-3],
+#label-4:checked ~ label[for=label-4],
+#label-5:checked ~ label[for=label-5],
+            #label-6:checked ~ label[for=label-6],
+#label-7:checked ~ label[for=label-7]{
+  color: #666;
+}
+#label-1:checked ~ label[for=label-1] h2 span,
+#label-2:checked ~ label[for=label-2] h2 span,
+#label-3:checked ~ label[for=label-3] h2 span,
+#label-4:checked ~ label[for=label-4] h2 span,
+#label-5:checked ~ label[for=label-5] h2 span,
+#label-6:checked ~ label[for=label-6] h2 span,
+#label-7:checked ~ label[for=label-7] h2 span{
+  color: #f6bd66;
+}
+#label-1:checked ~ label[for=label-1]:before,
+#label-2:checked ~ label[for=label-2]:before,
+#label-3:checked ~ label[for=label-3]:before,
+#label-4:checked ~ label[for=label-4]:before,
+#label-5:checked ~ label[for=label-5]:before,
+#label-6:checked ~ label[for=label-6]:before,
+#label-7:checked ~ label[for=label-7]:before
+            {
+
+background: greenyellow; 
+}
+            
+            
+                 @media only screen and (min-width: 600px) {
+                   h1 {font-size: 4vw;}
+                     h2 {font-size: 2vw;}
+                 
+}
+    
+            
+                             @media only screen and (min-width: 768px) {
+                 h2 {font-size: 4vw;}
+                                   h1 {font-size: 6vw;}
+                 
+}
+    
+            
+             @media only screen and (min-width: 1024px) {
+                 .column {width:20vw;}
+                 .columnLeft {float:left;}
+                 .columnRight {float:right;}
+                 label {padding: 0px 60px 0px  0px;}
+                 h2 {font-size: 2vw;}
+                    h1 {font-size: 3vw; margin-top: 0px;}
+                 .tasks {width:40vw;margin-top:50px;}
+}
+                         @media only screen and (min-width: 1280px) {
+                 h2 {font-size: 2vw;}
+                 .tasks {margin-top:70px;}
+}
+            
+        </STYLE>
+        <script src="https://kit.fontawesome.com/40181e3079.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet"> 
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VDBSL6RQJP"></script>
+
+<script>var clicky_site_ids = clicky_site_ids || []; clicky_site_ids.push(101299225);</script>
+<script async src="//static.getclicky.com/js"></script>
+
+     </head>
+     <body>  
+         
+         <DIV CLASS="pageContainer">
+             
+            <div class="column columnLeft">
+<DIV CLASS="card">
+    <SPAN CLASS="tag"><i class="fas fa-sun" style="color: darkorange"></i> Things You Are Grateful For:</SPAN>
+         <DIV CLASS="listContainer">
+         <OL CLASS="topLists custom-counter">
+         <LI><input type="text" id="gratefulOne"></LI>
+             <LI><input type="text" id="gratefulTwo"></LI>
+             <LI><input type="text" id="gratefulThree"></LI>
+            
+         </OL>
+             </DIV>
+         </DIV>
+             
+             
+             
+             <DIV CLASS="card">
+    <SPAN CLASS="tag"><i class="fas fa-star" style="color: crimson"></i> Most Important Tasks:</SPAN>
+         <DIV CLASS="listContainer">
+         <OL CLASS="topLists custom-counter">
+         <LI><input type="text" id="mitOne"></LI>
+             <LI><input type="text" id="mitTwo"></LI>
+             <LI><input type="text" id="mitThree"></LI>
+              <LI><input type="text" id="mitlFour"></LI>
+             <LI><input type="text" id="mitFive"></LI>
+            
+         </OL>
+             </DIV>
+    </DIV>
+             
+         </div>
+             
+             
+           <div class="column columnRight">  
+             <DIV CLASS="card">
+    <SPAN CLASS="tag"><i class="fas fa-magic" style="color: mediumslateblue"></i> Amazing things that happened today:</SPAN>
+       
+         <DIV CLASS="listContainer">
+         <OL CLASS="topLists custom-counter">
+         <LI><input type="text" id="gratefulOne"></LI>
+             <LI><input type="text" id="gratefulTwo"></LI>
+             <LI><input type="text" id="gratefulThree"></LI>
+            
+         </OL>
+             </DIV>
+         </DIV>
+
+             
+                          <DIV CLASS="card">
+    <SPAN CLASS="tag"><i class="fas fa-smile-wink" style="color: yellow"></i> How could I have made today better?</SPAN>
+       
+         <DIV CLASS="listContainer">
+         <OL CLASS="topLists custom-counter">
+         <LI><input type="text" id="gratefulOne"></LI>
+        
+            
+         </OL>
+             </DIV>
+         </DIV>
+             </div>
+             
+             
+        
+        <div class="tasks">
+  <!-- title -->
+  <!-- task 1 -->
+  <input id='label-1' type='checkbox'/>
+  <label for='label-1'>
+    <h2>Be physically active
+      <!--<span>test</span>-->
+    </h2>   
+  </label>
+  <!-- task 2 -->
+  <input id='label-2' type='checkbox'/>
+  <label for='label-2'>
+    <h2>Be present and meditate
+    </h2>   
+  </label>
+  <!-- task 3 -->
+  <input id='label-3' type='checkbox'/>
+  <label for='label-3'>
+    <h2>Drink 3-4 liters of water
+    </h2>   
+  </label>
+  <!-- task 4 -->
+  <input id='label-4' type='checkbox'/>
+  <label for='label-4'>
+    <h2>Practice gratitude and optimism
+    </h2>   
+  </label>
+  <!-- task 5 -->
+  <input id='label-5' type='checkbox'/>
+  <label for='label-5'>
+    <h2>Devote time to family and friends
+    </h2>   
+  </label>
+  <!-- task 6 -->
+  <input id='label-6' type='checkbox'/>
+  <label for='label-6'>
+    <h2>Get minimum of 7 hours of sleep
+    </h2>   
+  </label>
+            
+  <!-- task 7 -->
+  <input id='label-7' type='checkbox'/>
+  <label for='label-7'>
+    <h2>Savor time and experiences not money and things
+    </h2>   
+  </label>
 </div>
+     
+         
+         </DIV>
+         
+</body>
+</html>
